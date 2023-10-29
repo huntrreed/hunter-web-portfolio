@@ -15,7 +15,7 @@ header {
     margin-right: 2px;
     background-color:var(--dark) ;
     color: var(--background);
-    text-decoration: underline;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,7 +38,7 @@ header {
     color: var(--background);
   }
 
-  /*bar where I want a photo and text*/
+  /*bar with photo and text*/
 .hero {
     height: 300px;
     width: 100%;
@@ -48,6 +48,13 @@ header {
     background-image: url("../images/image-1.jpg");
     background-position: center;
 }
+/*cant get text to shopw up*/
+.hero span{
+  text-align: right;
+  text-decoration: underline;
+  font-size:200%;
+  color:red
+}
 
 h1 {
     font-size: 200%;
@@ -55,11 +62,11 @@ h1 {
   
   h2 {
     margin: 2% 0;
-    font-size: 250%;
+    font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
     Color:var(--dark);
     text-align: left;
-    border-right: 5px solid black;
+    border-right: 5px solid rgb(0, 155, 8);
     margin-right: 4px;
     width: 15%;
 
@@ -84,10 +91,10 @@ main {
   /*work card*/
 
 #work{
-    color:var(--dark);
-    background-color: none;
-    display: flex;
+  color:var(--dark);
+  display: flex;
 }
+/*might not need*/
 
 .work-card{
     display:flex;
@@ -95,6 +102,18 @@ main {
     align-items: center;
 
 }
+
+.large-card span{
+  position: absolute;
+  right: 40vw;
+  bottom: 20px;
+  border-width:5%;
+  background-color: var(--dark);
+  border-color: var(--dark);
+  color:var(--main);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .large-card{
     border:5px solid green;
     width:50vw;
@@ -114,20 +133,24 @@ main {
     height:20vw;
     padding: 10px;
     margin:10px;
+
     
 
+}
+.small-card span{
+  border-width:5%;
+  background-color: var(--dark);
+  border-color: var(--dark);
+  color:var(--main);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /*contact me card*/
 
 #contact-me{
-    background-color: none;
-    color:var(--dark);
-    display: flex;
-    text-align: center;
-    margin-right: 40%;
-    justify-content: space-between;
+  color:var(--dark);
+  display: flex;
 
 
 }
@@ -137,7 +160,7 @@ main {
     justify-content: space-between;
     min-width: 300px;
     list-style-type: square;
-    color:blue;
+    color:rgb(52, 244, 65);
 }
 
 #contact-me a{
