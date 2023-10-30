@@ -51,9 +51,12 @@ header {
 /*cant get text to shopw up*/
 .hero span{
   text-align: right;
+  color: var(--background)
+  margin-left: 10%;
+  margin-bottom: 0px%;
   text-decoration: underline;
   font-size:200%;
-  color:red
+  
 }
 
 h1 {
@@ -143,6 +146,12 @@ main {
   border-color: var(--dark);
   color:var(--main);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.small-card img{
+  width: 100%;
+  border: 10px;
+  border-color: var(--dark);
 }
 
 
