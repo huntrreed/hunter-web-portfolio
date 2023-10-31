@@ -5,4 +5,4 @@
 
 Hello! This webpage acts as a web portfolio for all the work done in the Coding Bootcamp. Currently, there is just one other completed project, but as I go - there will be more projects I can add to my page! At the end of this course, this page will function as a full portfolio that I can use for employers. 
 
-In this webpage, there are several different CSS variables and other aspects of CSS. 
+In this webpage, there are several different CSS variables and other aspects of CSS that prove I am able to use CSS effectively. There are some links to things such as my email and Github, and a bit of information about me.
