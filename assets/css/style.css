@@ -257,13 +257,13 @@ body {
     margin: 2% auto;
   }
   @media screen and (max-width: 600px) {
-    #about-me {
-        flex-direction: column;
-        align-items: flex-start;
+    .hero span {
+        font-size: 150%;
+        left: 50%;
+        transform: translateX(-50%);
     }
-
-    .profile-photo {
-        width: 100%; /* Full width on smaller screens */
-        margin: 10px 0; /* Adjust margin for mobile view */
+    .work-card, .large-card, .small-card {
+        width: 100%;
     }
+    /* Additional responsive styling */
 }
