@@ -40,24 +40,26 @@ header {
   }
 
   /*bar with photo and web portfolio label*/
-.hero {
-    height: 300px;
+  .hero {
+    position: relative; 
+    height: 300px; 
     width: 100%;
     margin-bottom: 0px;
-    background-color:var(--background);
+    background-color: var(--background);
     background-size: cover;
     background-image: url("../images/image-1.jpg");
     background-position: center;
 }
 
-.hero span{
-  position: absolute;
-  bottom: 35%;
-  left: 70%;
-  color: var(--main);
-  text-decoration: none;
-  font-size:300%;
+.hero span {
+    position: absolute; 
+    bottom: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: var(--main);
+    font-size: 300%; 
 }
+
 
 h1 {
     font-size: 200%;
@@ -83,16 +85,29 @@ body {
     line-height: 2;
 }
 /*about me section*/
-#about-me{
-    color:var(--dark);
-    display: flex;
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left; 
+  padding: 20px;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
+#about-me h2 {
+  flex-basis: 20%; 
+  margin-right: 10px; 
+}
+
+#about-me p {
+  flex-grow: 2;
+  margin-right: 10px; 
+}
+
+.profile-photo {
+  width: 250px; 
+  height: auto; /* Keeps the aspect ratio */
+  border-radius: 10%; 
+}
   
 /*work section*/
 
@@ -241,3 +256,14 @@ main {
     max-width: 1200px;
     margin: 2% auto;
   }
+  @media screen and (max-width: 600px) {
+    #about-me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for mobile view */
+    }
+}
