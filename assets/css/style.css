@@ -1,269 +1,291 @@
 :root {
-    --main: rgb(216, 154, 39);
-    --background: tan;
-    --dark:rgb(0, 59, 0);
-    font-family: Arial, Helvetica, sans-serif;
+  --main: rgb(216, 154, 39);
+  --background: tan;
+  --dark:rgb(0, 59, 0);
+  font-family: Arial, Helvetica, sans-serif;
 
 
 }
-
 
 /*top bar on page*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    height: 50px;
-    margin-right: 2px;
-    background-color:var(--dark) ;
-    color: var(--background);
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  height: 50px;
+  margin-right: 2px;
+  background-color:var(--dark) ;
+  color: var(--background);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    margin-left: 6 px;
-    list-style-type: none;
-  }
-  nav a {
-    color: var(--main);
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: var(--background);
-  }
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-left: 6 px;
+  list-style-type: none;
+}
+nav a {
+  color: var(--main);
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  /*bar with photo and web portfolio label*/
-  .hero {
-    position: relative; 
-    height: 300px; 
-    width: 100%;
-    margin-bottom: 0px;
-    background-color: var(--background);
-    background-size: cover;
-    background-image: url("../images/image-1.jpg");
-    background-position: center;
+nav a:hover {
+  color: var(--background);
+}
+
+/*bar with photo and web portfolio label*/
+.hero {
+  position: relative; 
+  height: 300px; 
+  width: 100%;
+  margin-bottom: 0px;
+  background-color: var(--background);
+  background-size: cover;
+  background-image: url("../images/image-1.jpg");
+  background-position: center;
 }
 
 .hero span {
-    position: absolute; 
-    bottom: 10%; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    color: var(--main);
-    font-size: 300%; 
+  position: absolute; 
+  bottom: 10%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: var(--main);
+  font-size: 300%; 
 }
 
 
 h1 {
-    font-size: 200%;
-  }
+  font-size: 200%;
+}
 
 /*side labels for different sections*/
-  h2 {
-    margin: 2% 0;
-    font-size: 200%;
-    font-family: Arial, Helvetica, sans-serif;
-    Color:var(--dark);
-    text-align: left;
-    border-right: 5px solid var(--main);
-    margin-right: 10px;
-    padding-right: 10px;
-    width: 15%;
+h2 {
+  margin: 2% 0;
+  font-size: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+  Color:var(--dark);
+  text-align: left;
+  border-right: 5px solid var(--main);
+  margin-right: 10px;
+  padding-right: 10px;
+  width: 15%;
 
-  }
-  
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    line-height: 2;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
 }
 /*about me section*/
 #about-me {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: left; 
-  padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+text-align: left; 
+padding: 20px;
 }
 
 #about-me h2 {
-  flex-basis: 20%; 
-  margin-right: 10px; 
+flex-basis: 20%; 
+margin-right: 10px; 
 }
 
 #about-me p {
-  flex-grow: 2;
-  margin-right: 10px; 
+flex-grow: 2;
+margin-right: 10px; 
 }
 
 .profile-photo {
-  width: 250px; 
-  height: auto; /* Keeps the aspect ratio */
-  border-radius: 10%; 
+width: 250px; 
+height: auto; /* Keeps the aspect ratio */
+border-radius: 10%; 
 }
-  
+
 /*work section*/
 
 #work{
-  color:var(--dark);
-  display: flex;
-  padding-right: 60px;
+color:var(--dark);
+display: flex;
+padding-right: 60px;
 }
 
 .work-card{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 15px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: auto; 
 }
+
 .large-card span{
-  border: width 10px;
-  font-size: 130%;
-  font-weight: 300;
-  position:absolute;
-  bottom: 20px;
-  left: 16px;
-  background-color: var(--dark);
-  border-color: var(--dark);
-  color:var(--main);
-  font-family: Arial, Helvetica, sans-serif;
+border: width 10px;
+font-size: 130%;
+font-weight: 300;
+position:absolute;
+bottom: 20px;
+left: 16px;
+background-color: var(--dark);
+border-color: var(--dark);
+color:var(--main);
+font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .large-card{
-    border:5px var(--dark);
-    position: relative;
-    text-align: center;
-    width:50vw;
-    background-color: var(--dark);
-    height:30vw;
-    padding: 3%;
-    margin-left: 4px;
+  border:5px var(--dark);
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: var(--dark);
+  height:auto;
+  padding: 3%;
+  margin-left: 4px;
+  max-width: 100%; 
+  margin: auto;
+  flex: 0 0 100%;
+  max-width: 100%; 
+  box-sizing: border-box; 
+
 }
 
 .large-card img{
-  width: 100%;
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  border: 10px;
-  margin: auto;
-  border-color: var(--dark);
+width: 100%;
+display:block;
+margin-left: auto;
+margin-right: auto;
+height: 100%;
+border: 10px;
+margin: auto;
+border-color: var(--dark);
 }
 
 /*container with four workcards*/
 .small-card-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.large-card img, .small-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .small-card{
-    border: 10px var(--dark);
-    position: relative;
-    text-align: center;
-    background-color: var(--dark);
-    width: 30vw;
-    height:20vw;
-    padding: 20px;
-    margin:10px;
+  border: 10px var(--dark);
+  flex-basis: calc(50% - 20px)
+  position: relative;
+  text-align: center;
+  background-color: var(--dark);
+  width: calc(50% - 10px); 
+  margin: 5px; 
+  display: inline-block; 
+  padding: 20px;
+  flex: 0 0 calc(25% - 20px); 
+  box-sizing: border-box;
+  height: auto;
 
 }
 .small-card span{
-  border-width: 10px;
-  position:absolute;
-  background-color: var(--dark);
-  border-color: var(--dark);
-  color:var(--main);
-  bottom: 25px;
-  left: 8px;
-  font-size: 120%;
-  padding: auto;
-  font-weight: 300;
-  font-family: Arial, Helvetica, sans-serif;
+border-width: 10px;
+position:absolute;
+background-color: var(--dark);
+border-color: var(--dark);
+color:var(--main);
+bottom: 25px;
+left: 8px;
+font-size: 120%;
+padding: auto;
+font-weight: 300;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .small-card img{
-  width: 100%;
-  display: block;
-  border: 10px;
-  border-color: var(--dark);
+width: 100%;
+display: block;
+border: 10px;
+border-color: var(--dark);
 }
 
 #work a{
-  background-color: var(--dark);
-  color:var(--main)
+background-color: var(--dark);
+color:var(--main)
 }
 
 /*contact me section*/
 
 #contact-me{
-  color:var(--dark);
-  display: flex;
+color:var(--dark);
+display: flex;
 
 }
 /*contact me links and items */
 
 #contact-me ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 300px;
-    font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 10px;
-    list-style-type: none;
-    color:var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  list-style-type: none;
+  color:var(--dark);
 }
 
 #contact-me a{
-    color:var(--main);
+  color:var(--main);
 }
 
 #css-tooltip {
-  position: relative;
-  text-decoration: underline;
-  color: var(--main);
-  cursor: pointer;
+position: relative;
+text-decoration: underline;
+color: var(--main);
+cursor: pointer;
 }
- 
+
 #css-tooltip:hover::after {
-  content: "Why are hovering over this?! It's 2023, of course I don't have a MySpace! You can email me though!";
-  position: absolute;
-  left: 0px;
-  bottom: 24px;
-  min-width: 200px;
-  border: 1px #aaaaaa solid;
-  background-color: var(--dark);
-  padding: 12px;
-  color: #fff;
-  font-size: 50%;
-  z-index: 1;
+content: "Why are hovering over this?! It's 2023, of course I don't have a MySpace! You can email me though!";
+position: absolute;
+left: 0px;
+bottom: 24px;
+min-width: 200px;
+border: 1px #aaaaaa solid;
+background-color: var(--dark);
+padding: 12px;
+color: #fff;
+font-size: 50%;
+z-index: 1;
 }
-  main {
-    display: flex;
-    flex: 1 1 0;
-    max-width: 1200px;
-    margin: 2% auto;
+main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 1200px;
+  margin: 2% auto;
+}
+@media screen and (max-width: 600px) {
+  .hero span {
+      font-size: 150%;
+      left: 50%;
+      transform: translateX(-50%);
   }
-  @media screen and (max-width: 600px) {
-    .hero span {
-        font-size: 150%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .work-card, .large-card, .small-card {
-        width: 100%;
-    }
-    /* Additional responsive styling */
+  .work-card, .large-card, .small-card {
+      width: 100%;
+  }
+  /*  responsive styling */
 }
