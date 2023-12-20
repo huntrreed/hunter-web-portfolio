@@ -13,11 +13,8 @@ header {
   align-items: center;
   padding: 2%;
   height: 50px;
-  margin-right: 2px;
-  background-color:var(--dark) ;
+  background-color: var(--dark);
   color: var(--background);
-  text-decoration: none;
-  font-family: 'League Spartan', sans-serif;
 }
 
 nav ul {
@@ -25,9 +22,9 @@ nav ul {
   justify-content: space-between;
   min-width: 300px;
   font-size: 25px;
-  margin-left: 6 px;
   list-style-type: none;
 }
+
 nav a {
   color: var(--main);
   font-weight: bold;
@@ -39,29 +36,26 @@ nav a:hover {
   color: var(--background);
 }
 
+nav a:hover {
+  color: var(--background);
+}
+
 /*bar with photo and web portfolio label*/
+
 .hero {
   position: relative; 
   height: 300px; 
-  width: 100%;
-  margin-bottom: 0px;
-  background-color: var(--background);
-  background-size: cover;
-  background-image: url("../images/image-1.jpg");
-  background-position: center;
+  background: var(--background) url("../images/image-1.jpg") center / cover no-repeat;
 }
-
 .hero span {
   position: absolute; 
   bottom: 10%; 
   left: 50%; 
   transform: translateX(-50%); 
   color: var(--main);
-  font-family:'League Spartan';
   font-weight: 800;
   font-size: 500%; 
 }
-
 
 h1 {
   font-size: 200%;
@@ -71,13 +65,10 @@ h1 {
 h2 {
   margin: 2% 0;
   font-size: 300%;
-  line-height:2;
-  font-family: 'League Spartan', Helvetica, sans-serif;
-  font-weight: 600;
-  Color: var(--dark);
+  line-height: 2;
+  color: var(--dark);
   text-align: right;
   border-right: 5px solid var(--main);
-  margin-right: 10px;
   padding-right: 10px;
   width: 15%;
 }
@@ -90,63 +81,48 @@ body {
 }
 
 /*about me section*/
-
-.sidebar {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-row-gap: 20px; 
-  background-color: #f0f0f0; 
-  padding: 20px;
-  box-sizing: border-box;
-  align-content: start;
-}
-
-.sidebar-item {
-  transform: rotate(180deg);
-  background-color: green; 
-  color: white; 
-  padding: 5px;
-  font-size: 20px; 
-  text-align: center;
-}
-
 #about-me {
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-text-align: left; 
-padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
 }
-
-
 
 #about-me p {
-flex-grow: 2;
-margin-right: 10px; 
+  flex-grow: 2;
+  margin-right: 10px; 
 }
 
 .profile-photo {
-width: 250px; 
-height: auto; /* Keeps the aspect ratio */
-border-radius: 10%; 
+  width: 250px; 
+  height: auto;
+  border-radius: 10%; 
 }
 
 /*work section*/
-
 #work{
-color:var(--dark);
-display: flex;
-padding-right: 60px;
+  color:var(--dark);
+  display: flex;
+  padding-right: 60px;
 }
-
-.full-work-card{
-  position:relative;
+/*Full container for all work cards*/
+.full-work-card {
   display:flex;
   flex-direction: column;
   align-items: right;
   width: 100%; 
   max-width: 1200px; 
   margin: auto; 
+}
+
+/*container with four workcards*/
+.small-card-container{
+  display: flex;
+  position:relative;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+  margin:auto;
 }
 
 .large-card span{
@@ -163,47 +139,29 @@ color:var(--main);
 font-family: Arial, Helvetica, sans-serif;
 }
 
+.full-work-card, .small-card-container {
+  width: 80%;
+}
 
-.large-card{
-  border:5px var(--dark);
+.large-card {
+  border: 5px solid var(--dark);
   position: relative;
   text-align: center;
-  width: 78%;
-  margin-bottom: 20px;
   background-color: var(--dark);
-  height:7px;
-  padding: 3%;
-  margin-left: 4px;
-  max-width: 100%; 
-  margin: auto;
-  flex: 0 0 100%;
-  max-width: 100%; 
-  box-sizing: border-box; 
+  height: 200px; 
+  margin: 10px auto; 
+  box-sizing: border-box;
+  overflow: hidden;
+  width: calc(82% - 40px); 
 }
 
-.large-card img{
-width: 100%;
-display: block;
-height: 250px;
-border: 10px;
-margin: auto;
-border-color: var(--dark);
+.large-card img {
+  width: 100%; 
+  object-fit: cover; 
+  object-position: center; 
+  border: none; 
 }
 
-/*container with four workcards*/
-.small-card-container{
-  display: flex;
-  position:relative;
-  justify-content: space-between;
-  width: 80%;
-  flex-wrap: wrap;
-  margin:auto;
-}
-  
-.large-card img,{
-  width: 100%;
-  height: 500px;
-}
 
  .small-card img {
   width: 100%;
@@ -212,58 +170,26 @@ border-color: var(--dark);
 }
 
 .small-card{
-  border: 10px var(--dark);
-  flex-basis: calc(50% - 20px);
-  margin: 10px;
-  padding-top: 50px;
-  height: 200px;
-  position: relative;
-  text-align: center;
-  background-color: var(--dark);
-  width: calc(50% - 10px); 
-  padding: 20px; 
-  box-sizing: border-box;
-  
-}
+    border: 5px solid var(--dark);
+    position: relative;
+    text-align: center;
+    background-color: var(--dark);
+    height: 200px; 
+    margin: 10px;
+    flex-basis: calc(50% - 20px); 
+    box-sizing: border-box;
+    overflow: hidden;
+  }
 
-.large-card span,{
+.large-card span, .small-card span {
   position: absolute; 
-  bottom: 20px; 
-  left: 16px; 
-  background-color: rgba(0, 59, 0, 0.7); 
+  bottom: 10px; 
+  left: 10px; 
+  background-color: rgba(0, 0, 0, 0.7); 
   color: var(--main); 
   padding: 5px; 
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   font-weight: 300;
-  border: none;
-}
-
-.full-work-card span, .small-card span {
-border-width: 10px;
-position: absolute; 
-bottom: 10px; 
-left: 10px; 
-background-color: rgba(0, 0, 0, 0.5); 
-color: white; 
-padding: 5px; 
-font-size: 1rem;
-position:absolute;
-background-color: var(--dark);
-border-color: var(--dark);
-color:var(--main);
-bottom: 25px;
-left: 8px;
-font-size: 120%;
-padding: auto;
-font-weight: 300;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-.small-card img{
-width: 100%;
-display: block;
-border: 10px;
-border-color: var(--dark);
 }
 
 #work a{
@@ -273,50 +199,21 @@ color:var(--main)
 
 /*contact me section*/
 
-#contact-me{
-color:var(--dark);
-display: flex;
-
-}
-/*contact me links and items */
-
-#contact-me ul{
+#contact-me, #contact-me ul {
+  color: var(--dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 300px;
   font-size: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
   margin: 10px;
   list-style-type: none;
-  color:var(--dark);
 }
 
-#contact-me a{
-  color:var(--main);
+#contact-me a {
+  color: var(--main);
 }
 
-#css-tooltip {
-position: relative;
-text-decoration: underline;
-color: var(--main);
-cursor: pointer;
-}
-
-#css-tooltip:hover::after {
-content: "Why are hovering over this?! It's 2023, of course I don't have a MySpace! You can email me though!";
-position: absolute;
-left: 0px;
-bottom: 24px;
-min-width: 200px;
-border: 1px #aaaaaa solid;
-background-color: var(--dark);
-padding: 12px;
-color: #fff;
-font-size: 50%;
-z-index: 1;
-}
 
 main {
   display: flex;
