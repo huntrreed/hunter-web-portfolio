@@ -208,20 +208,40 @@ color:var(--main)
 
 /*contact me section*/
 
-#contact-me #contact-me ul {
-  color: var(--dark);
-  display: flex;
-  justify-content: space-between;
+#contact-me {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
   align-items: center;
   padding: 5px;
   margin: 10px;
-  list-style-type: none;
+}
+
+#contact-me ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 50%; 
+  list-style-type: none; 
+  padding: 0; 
+}
+
+#contact-me li {
+  margin: 0 10px; 
 }
 
 #contact-me a {
   color: var(--main);
+  font-family: "league spartan", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-decoration: none; 
 }
 
+#contact-me a:hover {
+  color: #043d13; 
+  cursor: pointer; 
+}
 
 main {
   display: flex;
