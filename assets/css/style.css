@@ -73,7 +73,6 @@ h2 {
   width: 15%;
 }
 
-
 body {
   display: flex;
   flex-direction: column;
@@ -84,8 +83,9 @@ body {
 #about-me {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start; 
   padding: 20px;
+ 
 }
 
 #about-me p {
@@ -101,11 +101,23 @@ body {
 }
 
 /*work section*/
-#work{
-  color:var(--dark);
+#work {
   display: flex;
-  padding-right: 60px;
+  flex-direction: row; 
+  padding: 20px 0; 
 }
+
+#work h2 {
+  font-size: 300%;
+  color: var(--dark);
+  padding: 0 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; 
+  margin-right: 10px; 
+}
+
 /*Full container for all work cards*/
 .full-work-card {
   display:flex;
@@ -261,29 +273,31 @@ color:var(--main)
 
 /*contact me section*/
 
-#contact-me {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-between; 
-  align-items: center;
-  padding: 5px;
-  margin: 10px;
+.contact-container {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 20px; 
 }
 
-#contact-me ul {
+.contact-container h2 {
+  margin-right: 20px; 
+  flex-shrink: 0; 
+}
+
+.contact-container ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  width: 50%; 
   list-style-type: none; 
   padding: 0; 
+  margin: 0; 
+  align-items: center; 
 }
 
-#contact-me li {
-  margin: 0 10px; 
+.contact-container li {
+  margin: 0 25px; 
 }
 
-#contact-me a {
+.contact-container a {
   color: var(--main);
   font-family: "league spartan", Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -291,10 +305,11 @@ color:var(--main)
   text-decoration: none; 
 }
 
-#contact-me a:hover {
+.contact-container a:hover {
   color: #043d13; 
   cursor: pointer; 
 }
+
 
 main {
   display: flex;
