@@ -91,7 +91,9 @@ body {
 #about-me p {
   flex-grow: 2;
   margin-right: 10px; 
-  margin-left: 20px
+  margin-left: 30px;
+  font-family: "league spartan";
+  font-size: 25px;
 }
 
 .profile-photo {
