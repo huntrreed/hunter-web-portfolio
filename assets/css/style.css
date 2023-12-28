@@ -127,21 +127,37 @@ body {
 }
 
 .large-card span{
-border-width: 10px;
-position:relative;
-font-size: 130%;
-font-weight: 300;
-position:absolute;
-bottom: 20px;
-left: 16px;
-background-color: var(--dark);
-border-color: var(--dark);
-color:var(--main);
-font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--dark);
+  color: var(--main);
+  padding: 8px;
+  font-family: "league spartan";
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+  z-index: 2; 
+}
+
+.small-card span{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--dark);
+  color: var(--main);
+  padding: 8px;
+  font-family: "league spartan";
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+  z-index: 2; 
 }
 
 .full-work-card, .small-card-container {
-  width: 80%;
+  width: 95%;
 }
 
 .large-card {
@@ -153,7 +169,7 @@ font-family: Arial, Helvetica, sans-serif;
   margin: 10px auto; 
   box-sizing: border-box;
   overflow: hidden;
-  width: calc(82% - 40px); 
+  width: calc(97% - 40px); 
 }
 
 .large-card img {
@@ -165,9 +181,10 @@ font-family: Arial, Helvetica, sans-serif;
 
 
  .small-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+  width: 100%; 
+  object-fit: cover; 
+  object-position: center; 
+  border: none;
 }
 
 .small-card{
@@ -180,21 +197,23 @@ font-family: Arial, Helvetica, sans-serif;
   flex-basis: calc(50% - 20px); 
   box-sizing: border-box;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 
 .large-card span a, .small-card span a {
-  position: absolute; 
-  bottom: 10px; 
-  left: 10px; 
-  white-space: nowrap;
-  background-color: var(--dark); 
-  color: var(--main); 
-  padding: 8px; 
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--dark);
+  color: var(--main);
+  padding: 8px;
   font-family: "league spartan";
   font-size: 1.5rem;
   font-weight: 500;
-  text-decoration: none; 
+  text-decoration: none;
+  transition: color 0.3s ease; 
+  z-index: 2; 
 }
 
 .large-card span a:hover, .small-card span a:hover {
@@ -205,6 +224,39 @@ font-family: Arial, Helvetica, sans-serif;
 #work a{
 background-color: var(--dark);
 color:var(--main)
+}
+
+/*tan overlay on images when hovered above*/
+.large-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 180, 140, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.large-card:hover::before {
+  opacity: 1;
+}
+
+.small-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(210, 180, 140, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.small-card:hover::before {
+  opacity: 1;
 }
 
 /*contact me section*/
